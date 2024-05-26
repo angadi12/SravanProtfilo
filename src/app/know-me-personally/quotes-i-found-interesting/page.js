@@ -12,6 +12,11 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
+import Quote1 from '../../../images/hero/QUOTE1.png'
+import Quote2 from '../../../images/hero/QUOTE2.png'
+import Quote3 from '../../../images/hero/QUOTE3.png'
+import Quote4 from '../../../images/hero/QUOTE4.png'
+import Quote5 from '../../../images/hero/QUOTE5.png'
 
 function Page() {
   const router = useRouter();
@@ -34,27 +39,23 @@ function Page() {
 
   const quotes = [
     {
-      quote:
-        "The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle.",
-      author: "Steve Jobs",
+      quote:Quote1
     },
     {
-      quote:
-        "In the midst of winter, I found there was, within me, an invincible summer.",
-      author: "Albert Camus",
+      quote:Quote2
+
     },
     {
-      quote: "Believe you can and you're halfway there.",
-      author: "Theodore Roosevelt",
+      quote: Quote3
+    
     },
     {
-      quote:
-        "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-      author: "Nelson Mandela",
+      quote:Quote4
+       
     },
     {
-      quote: "The best way to predict the future is to create it.",
-      author: "Abraham Lincoln",
+      quote: Quote1
+     
     },
   ];
 
@@ -79,9 +80,9 @@ function Page() {
         opacity: 1,
       }}
       transition={{ duration: 2 }}
-      className="md:pt-16 p-2 md:p-0  min-h-[100vh]"
+      className="md:pt-12 p-2 md:p-0  min-h-[100vh]"
     >
-      <div className="flex items-center md:pb-8 border-b-2 border-b-[#858585] w-[90%] mx-auto py-5  ">
+      <div className="flex items-center md:pb-8 border-b-2 border-b-[#858585] w-[90%] mx-auto py-2 ">
         <Image
           src={arrow}
           style={{
@@ -92,9 +93,9 @@ function Page() {
           }}
           onClick={() => router.back()}
         />
-        <p className="md:text-5xl uppercase font-bold">QUOTES I FOUND</p>
+        <p className="md:text-4xl uppercase font-bold">QUOTES I FOUND</p>
       </div>
-      <div className="mt-20   w-full flex justify-center items-center mx-auto">
+      <div className="mt-20   w-full flex justify-center items-center mx-auto overflow-hidden">
         <Carousel
           setApi={setApi}
           plugins={[plugin.current]}
@@ -103,31 +104,27 @@ function Page() {
           opts={{
             align: "center",
           }}
-          orientation="vertical"
           className="w-full flex justify-center items-center text-center"
         >
-          <CarouselContent className="-mt-1 md:h-[400px] h-96 w-full mx-auto">
+          <CarouselContent className="-mt-1 w-full mx-auto">
             {quotes.map((value, index) => (
               <CarouselItem
                 key={index}
-                className="pt-1 md:basis-1/1 w-11/12 mx-auto"
+                className="pt-1 md:basis-1/2  mx-auto"
               >
-                <div className="flex flex-col mb-20 w-full">
-                  <p
-                    className="md:text-5xl text-2xl font-normal leading-relaxed text-center"
-                    style={{ fontFamily: "Pacifico" }}
-                  >
-                    {value.quote}
-                  </p>
-                  <p className="text-center font-bold mt-5 md:text-3xl tracking-widest">
-                    - {value.author}
-                  </p>
+                <div className="flex  ">
+                    <Image className="object-contain h-96 " src={value.quote} alt="quote"/>
                 </div>
               </CarouselItem>
             ))}
+
+            
           </CarouselContent>
-          {/* <CarouselPrevious />
-      <CarouselNext /> */}
+          <div className="absolute bottom-12 right-28">
+          <CarouselPrevious className='bg-black text-white' />
+      <CarouselNext className='bg-black text-white'/>
+
+          </div>
         </Carousel>
       </div>
     </motion.div>

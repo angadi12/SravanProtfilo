@@ -17,14 +17,12 @@ import Navigatebutton from "@/components/Navigatebutton";
 import { NextUIProvider } from "@nextui-org/react";
 import Nav from "@/components/Navbar";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react"
+import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { motion } from "framer-motion";
 
 export default function Home() {
-
-
-  gsap.registerPlugin(useGSAP,ScrollToPlugin);
+  gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
   useGSAP(() => {
     const button = document.querySelector("#Mystory");
@@ -35,27 +33,44 @@ export default function Home() {
     const button5 = document.querySelector("#name");
 
     button.addEventListener("click", () => {
-      gsap.to(window, {duration: 2, scrollTo:{y:"#section1", offsetY:70},ease:"back.out"});
+      gsap.to(window, {
+        duration: 2,
+        scrollTo: { y: "#section1", offsetY: 70 },
+        ease: "back.out",
+      });
     });
     button1.addEventListener("click", () => {
-      gsap.to(window, {duration: 2, scrollTo:{y:"#section2", offsetY:70},ease:"back.out"});
+      gsap.to(window, {
+        duration: 2,
+        scrollTo: { y: "#section2", offsetY: 70 },
+        ease: "back.out",
+      });
     });
     // button2.addEventListener("click", () => {
     //   gsap.to(window, {duration: 3, scrollTo:{y:"#section3", offsetY:70},ease:"back.out"});
     // });
     button3.addEventListener("click", () => {
-      gsap.to(window, {duration: 4, scrollTo:{y:"#section4", offsetY:70},ease:"back.out"});
+      gsap.to(window, {
+        duration: 4,
+        scrollTo: { y: "#section4", offsetY: 70 },
+        ease: "back.out",
+      });
     });
     button4.addEventListener("click", () => {
-      gsap.to(window, {duration: 3, scrollTo:{y:"#section5", offsetY:70},ease:"back.out"});
+      gsap.to(window, {
+        duration: 3,
+        scrollTo: { y: "#section5", offsetY: 70 },
+        ease: "back.out",
+      });
     });
     button5.addEventListener("click", () => {
-      gsap.to(window, {duration: 3, scrollTo:{y:"#hero", offsetY:70},ease:"back.out"});
+      gsap.to(window, {
+        duration: 3,
+        scrollTo: { y: "#hero", offsetY: 70 },
+        ease: "back.out",
+      });
     });
-   
-  },
- 
-); 
+  });
 
   return (
     <motion.div
@@ -64,7 +79,8 @@ export default function Home() {
         opacity: 1,
       }}
       transition={{ duration: 1 }}
-      exit={{opacity:0}}>
+      exit={{ opacity: 0 }}
+    >
       <NextUIProvider>
         <div className=" w-full fixed z-10 p-1">
           <Nav />
@@ -79,32 +95,25 @@ export default function Home() {
         >
           <Navigatebutton />
           <div id="hero">
-
-          <Hero />
+            <Hero />
           </div>
+
           <Experience />
           <div id="section1">
-
-          <MyStory />
+            <MyStory />
           </div>
           <FoundersMission />
           <MyLifestyle />
           <div id="section2">
-          <OurServices />
-
+            <OurServices />
           </div>
-          <div id="section3">
-          {/* <OurWorks /> */}
-
-          </div>
+          <div id="section3">{/* <OurWorks /> */}</div>
           {/* <RatingsAndClients /> */}
           <div id="section4">
-
-          <SocialFeeds />
+            <SocialFeeds />
           </div>
           <div id="section5">
-
-          <ContactMe />
+            <ContactMe />
           </div>
           <Image
             src={orangeBlob}
@@ -115,6 +124,9 @@ export default function Home() {
         </div>
         <Footer />
       </NextUIProvider>
+       
+
+     
     </motion.div>
   );
 }

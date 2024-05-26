@@ -148,7 +148,7 @@ function MyLifestyle() {
       <div
         style={{
           minHeight: "fit-content",
-          maxWidth: "70%",
+          maxWidth: "80%",
           marginInline: "auto",
           marginBottom: "30px",
         }}
@@ -385,20 +385,20 @@ function MyLifestyle() {
             );
           })}
       </div>
-      <div className="md:w-3/4 mx-auto md:p-10 p-3 ">
+      <div className="md:w-[80%] mx-auto md:p-10 p-3 ">
         <div className="flex justify-start items-end gap-2">
           <Image className="mb-6" src={Vector}/>
           <h6 className="leading-7 tracking-wide uppercase font-semibold w-96">Navigating Life's Pathways with Purpose, attitude and approach.</h6>
         </div>
-        <div className="flex justify-center md:flex-row flex-col items-center gap-12 mt-8">
+        <div className="flex justify-center md:flex-row flex-col items-center gap-12 mt-8 w-full">
           <div className=" border-l-2 p-4 border-black flex flex-col justify-between items-start gap-16 h-auto">
             <div>
               <p className="font-extrabold text-4xl leading-10">01</p>
               <p className="uppercase font-medium">purpose</p>
             </div>
             <div className="flex justify-start items-start gap-2 flex-col">
-              <li className="text-xs font-semibold w-52 text-justify uppercase break-all">{`My philosophy is rooted in the belief that success is achieved through hard work,  determination, and a willingness to take risks.`}</li>
-              <li className="text-xs font-semibold w-52 text-justify uppercase break-all">{`I strive to make a positive impact on the world and give back to society.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`My philosophy is rooted in the belief that success is achieved through hard work,  determination, and a willingness to take risks.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I strive to make a positive impact on the world and give back to society.`}</li>
             </div>
           </div>
           <div className=" border-l-2 p-4 border-black flex flex-col justify-between items-start gap-16 h-auto">
@@ -407,8 +407,8 @@ function MyLifestyle() {
               <p className="uppercase font-medium">attitude</p>
             </div>
             <div className="flex justify-start items-start gap-2 flex-col">
-              <li className="text-xs font-semibold w-52 text-justify uppercase break-all">{`I embrace failure as a natural part of the process and use it as an opportunity to learn, adapt,  and evolve.`}</li>
-              <li className="text-xs font-semibold w-52 text-justify uppercase break-all">{`I understand the value of perseverance and the ability to bounce back from setbacks.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I embrace failure as a natural part of the process and use it as an opportunity to learn, adapt,  and evolve.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I understand the value of perseverance and the ability to bounce back from setbacks.`}</li>
             </div>
           </div>
           <div className=" border-l-2 p-4 border-black flex flex-col justify-between items-start gap-16 h-auto">
@@ -417,8 +417,8 @@ function MyLifestyle() {
               <p className="uppercase font-medium">purpose</p>
             </div>
             <div className="flex justify-start items-start gap-2 flex-col">
-              <li className="text-xs font-semibold w-52 text-justify uppercase break-all">{`I embrace the journey of continuous learning and, understanding of knowledge.`}</li>
-              <li className="text-xs font-semibold w-52 text-justify uppercase break-all">{`I remain steadfast in my commitment to staying focused, adaptable, and perpetually in pursuit of knowledge.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I embrace the journey of continuous learning and, understanding of knowledge.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I remain steadfast in my commitment to staying focused, adaptable, and perpetually in pursuit of knowledge.`}</li>
             </div>
           </div>
          

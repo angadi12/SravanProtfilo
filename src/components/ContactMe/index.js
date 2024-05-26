@@ -107,8 +107,8 @@ function ContactMe() {
   };
 
   return (
-    <div className="bg-white px-5 py-10 sm:px-40 text-black" id="contact-us">
-      <div className="flex sm:gap-5 max-w-[800px] mx-auto">
+    <div className="bg-white  py-10 sm:px-40 text-black" id="contact-us">
+      <div className="flex sm:gap-5 max-w-[900px] mx-auto">
         <motion.div
           // reveals content from left to right
           initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
@@ -144,8 +144,8 @@ function ContactMe() {
       <p className="uppercase font-semibold mt-10">
         fill out the necessary details, i will contact you!
       </p>
-      <div className="flex justify-between items-start gap-10 h-auto md:flex-row flex-col">
-        <form className="md:flex-[0.7] flex-1 gap-12 text-black font-bold">
+      <div className="flex justify-between items-start gap-24 h-auto md:flex-row flex-col">
+        <form className="md:flex-[0.8] flex-1 gap-12 text-black font-bold">
           <div className="flex gap-5 my-5 py-4 flex-wrap">
             <input
               id="name"
@@ -207,7 +207,7 @@ function ContactMe() {
             {loading ? <Spinner color="white" /> : "contact me"}
           </button>
         </form>
-        <div className="flex-[0.3]  h-auto gap-8 bg-black p-8 text-white rounded-bl-[30px] rounded-tr-[30px]  flex-col hidden md:flex relative">
+        <div className="flex-[0.3]  h-auto gap-4 bg-black p-8 text-white rounded-bl-[30px] rounded-tr-[30px]  flex-col hidden md:flex relative">
           <p className="uppercase my-2 font-bold">Contact me :</p>
           <hr></hr>
           <div>

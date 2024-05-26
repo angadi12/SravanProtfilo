@@ -3,30 +3,33 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import arrow from "@/images/common/ArrowWhite.png";
 import sravan from "@/images/common/sravan.jpg";
+import Sravann from "@/images/hero/Sravann.png";
 
 import Image from "next/image";
 import Crouselslider from "../Crouselslider";
+import { Divider } from "@nextui-org/react";
 function MyStory() {
   const [showMyStory, setShowMyStory] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setShowMyStory((prev) => !prev);
-    }, 2000); 
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="flex flex-col">
-    
       <div className="flex py-12 mt-4 mb-8 gap-12   justify-center text-right">
         <div>
           <motion.p
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
-            whileInView={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
+            whileInView={{
+              clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            }}
             viewport={{ once: false }}
-            transition={{ duration: 2,}}
+            transition={{ duration: 2 }}
             className="text-[--color-theme] text-3xl md:text-8xl leading-10 font-semibold "
           >
             MY
@@ -76,53 +79,52 @@ function MyStory() {
           </motion.div>
         </div>
       </div>
-      <div className="mt-10 md:max-w-[800px] mx-auto text-center">
-        <p className="mx-auto md:text-4xl text-2xl font-bold leading-14 tracking-tighter">
-          WELCOME TO MY WORLD.
-        </p>
-        <p className="mt-5 text-base font-normal leading-7 tracking-tighter text-center">
-          The Founder and CEO of{" "}
-          <span className="text-[--color-theme]">
-            Angadi World Technologies Pvt. Ltd.
-          </span>{" "}
-          and{" "}
-          <span className="text-[--color-theme]">
-            International Business Expedition Trailblazers
-          </span>
-          . My goal is to support aspiring entrepreneurs, collaborate with
-          like-minded individuals, and create ventures that bring health,
-          wealth, and happiness to all involved.
-        </p>
-      </div>
-      <div className="mt-10 md:w-11/12 md:h-96 w-full mx-auto text-center flex md:flex-row flex-col   border-white border ">
-        <div className="md:flex-1 ">
+
+      <div className="w-11/12 py-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between items-end gap-24">
+        <div className="w-full  flex justify-center items-start relative">
           <Image
-            className="w-full h-[23rem] object-cover "
             src={sravan}
-            height={100}
-            width={100}
-            // style={{
-            //   width: "100%",
-            //   height: "100%",
-            //   objectFit: "cover",
-            //   verticalAlign: "middle",
-            // }}
-            unoptimized
+            className="h-[32rem] object-contain"
+            alt="personal pic"
+          />
+          <Image
+            className="absolute -bottom-8 -right-8 object-contain h-60"
+            src={Sravann}
+            alt="personal pic"
           />
         </div>
-        <div className="border-s border-s-white p-5 flex items-center  flex-col flex-1 text-[14px] text-left md:text-center">
+        <div className="w-full flex flex-col gap-4 justify-center items-start">
+          <p className="text-[#FF7143] uppercase font-semibold">About me</p>
+          <h6 className="text-3xl font-bold uppercase">
+            WELCOME TO MY <br></br>WORLD.
+          </h6>
+          <p className="text-justify font-medium">
+            The Founder and CEO of{" "}
+            <span className="text-[#FF7143]">
+              Angadi World Technologies Pvt. Ltd.
+            </span>{" "}
+            and{" "}
+            <span className="text-[#FF7143]">
+              International Business Expedition Trailblazers.
+            </span>{" "}
+            My goal is to support aspiring entrepreneurs, collaborate with
+            like-minded individuals, and create ventures that bring health,
+            wealth, and happiness to all involved.
+          </p>
+          <Divider className="bg-white" />
           <p>
-            {`“A Journey of Innovation and Impact   
-Welcome to a world where curiosity meets innovation. I am Sravan Kumar Angadi, the entrepreneurial mind behind Angadi World Technologies, leading a suite of ventures from the forefront of technological innovation and sustainable development. Transitioning from aeronautical engineering to pioneering in diverse industries, my mission is clear: leverage technology to forge solutions that address real-world challenges, fostering progress and positive change. Through endeavors like QR Angadi, Interior Angadi, and Organic Angadi, I aim to craft a future where innovation not only drives business success but also contributes to a sustainable and impactful tomorrow”`}
+            “I unite top talents to pursue greatness through teamwork and
+            collaboration. Fueled by innovation, I've built a thriving business,
+            impacting many lives.”
           </p>
-          <p className="mt-2 mb-1 text-base font-semibold leading-7 tracking-tighter">
-            SRAVAN KUMAN ANGADI
-          </p>
-          <p className="text-[--color-theme] text-base font-semibold leading-7 tracking-tighter">
-            FOUNDER - CEO
-          </p>
+          <div>
+            <h6 className="uppercase font-semibold text-lg">SRAVAN KUMAN ANGADI</h6>
+
+            <p className="text-[#FF7143] text-sm font-medium">FOUNDER - CEO</p>
+          </div>
         </div>
       </div>
+
       <div className="py-28">
         <Crouselslider />
       </div>

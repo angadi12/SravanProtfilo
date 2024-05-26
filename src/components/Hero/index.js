@@ -16,6 +16,8 @@ import Locationslide from "../../images/hero/Locationslide.png";
 import Sign from "../../images/hero/Sign.png";
 import Location from "../../images/hero/Location.png";
 import Social from "../../images/hero/Social.png";
+import Insta from "../../images/hero/Insta.png";
+import Linkdin from "../../images/hero/Linkdin.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Hero() {
@@ -67,185 +69,182 @@ function Hero() {
         <Image src={sravan} width={700} height={500} />
       </div>
 
-      <div className="h-auto   absolute right-0 top-48 flex  justify-end items-start gap-2">
-
-
-        <div  className="flex flex-col justify-center items-end">
-        <div className="flex items-start w-[48rem] h-32   relative top-8">
-          <AnimatePresence>
-            {currentindex === 0 && (
-              <motion.div
-             
-              
-                initial={{ y: 20, opacity: 0, }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                exit={{ opacity: 0, y: 10 }}
-              >
-                <Image
-                  className=" w-[48rem] h-32 relative"
-                  src={Birthslide}
-                  alt="frame"
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-          
+      <div className="h-auto   absolute right-0 top-32 flex  justify-end items-start gap-2">
+        <div className="flex flex-col justify-center items-end">
+          <div className="flex items-start w-[48rem] h-32   relative top-8">
+            <AnimatePresence>
+              {currentindex === 0 && (
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8 }}
+                  exit={{ opacity: 0, y: 10 }}
+                >
+                  <Image
+                    className=" w-[48rem] h-32 relative"
+                    src={Birthslide}
+                    alt="frame"
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-        <div className="flex items-start  w-[48rem] h-32 relative -top-8 ">
-          <AnimatePresence>
-            {currentindex === 1 && (
-              <motion.div
-             
-              
-                initial={{ y: 20, opacity: 0, }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                exit={{ opacity: 0, y: 10 }}
-              >
-                <Image
-                  className=" w-[48rem] h-32 relative"
-                  src={Signslide}
-                  alt="frame"
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-          
+          <div className="flex items-start  w-[48rem] h-32 relative -top-8 ">
+            <AnimatePresence>
+              {currentindex === 1 && (
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8 }}
+                  exit={{ opacity: 0, y: 10 }}
+                >
+                  <Image
+                    className=" w-[48rem] h-32 relative"
+                    src={Signslide}
+                    alt="frame"
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-        <div className="flex items-start   w-[48rem] h-32 relative -top-24 ">
-          <AnimatePresence>
-            {currentindex === 2 && (
-              <motion.div
-             
-              
-                initial={{ y: 20, opacity: 0, }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                exit={{ opacity: 0, y: 10 }}
-              >
-                <Image
-                  className=" w-[48rem] h-32 relative"
-                  src={Locationslide}
-                  alt="frame"
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-          
+          <div className="flex items-start   w-[48rem] h-32 relative -top-24 ">
+            <AnimatePresence>
+              {currentindex === 2 && (
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8 }}
+                  exit={{ opacity: 0, y: 10 }}
+                >
+                  <Image
+                    className=" w-[48rem] h-32 relative"
+                    src={Locationslide}
+                    alt="frame"
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-        <div className="flex items-start gap-2  w-[48rem] h-32 relative -top-40">
-          <AnimatePresence>
-            {currentindex === 3 && (
-              <motion.div
-             
-              
-                initial={{ y: 20, opacity: 0, }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                exit={{ opacity: 0, y: 10 }}
-              >
-                <Image
-                  className=" w-[48rem] h-32 relative"
-                  src={Frame}
-                  alt="frame"
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-          
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-         <div>
-
-        <div className="flex items-start w-full relative ">
-          <div
-            onMouseOver={() => setindex(0)}
-            onMouseLeave={() => setindex(null)}
-          >
-            <Image
-              className="object-contain cursor-pointer h-16 w-16"
-              src={birthicon}
-              alt="birthicon"
-            />
-          </div>
-        </div>
-        <div className="flex items-start w-full relative ">
-          <div
-            onMouseOver={() => setindex(1)}
-            onMouseLeave={() => setindex(null)}
-          >
-            <Image
-              className="object-contain cursor-pointer h-16 w-16"
-              src={Sign}
-              alt="birthicon"
-            />
-          </div>
-        </div>
-        <div className="flex items-start w-full relative ">
-          <div
-            onMouseOver={() => setindex(2)}
-            onMouseLeave={() => setindex(null)}
-          >
-            <Image
-              className="object-contain cursor-pointer h-16 w-16"
-              src={Location}
-              alt="birthicon"
-            />
-          </div>
-        </div>
-        <div className="flex items-start w-full relative ">
           <div
             onMouseOver={() => setindex(3)}
             onMouseLeave={() => setindex(null)}
+            className="flex items-end gap-8 flex-col  h-32 relative -top-40 -right-8"
           >
-            <Image
-              className="object-contain cursor-pointer h-16 w-16"
-              src={Social}
-              alt="birthicon"
-            />
+            <AnimatePresence>
+              {currentindex === 3 && (
+                <>
+                  <motion.div
+                    initial={{
+                      position: "relative",
+                      top: -8,
+                      right: -20,
+                      opacity: 0,
+                    }}
+                    whileInView={{
+                      position: "relative",
+                      top: 16,
+                      right: 20,
+                      opacity: 1,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    exit={{
+                      position: "relative",
+                      top: 0,
+                      right: 0,
+                      opacity: 0,
+                    }}
+                  >
+                    <Image
+                      className="object-contain h-14 w-14 -top-2 right-4 relative"
+                      src={Insta}
+                      alt="frame"
+                    />
+                  </motion.div>
+                  <motion.div
+                    initial={{
+                      position: "relative",
+                      top: -40,
+                      right: -40,
+                      opacity: 0,
+                    }}
+                    whileInView={{
+                      position: "relative",
+                      top: -8,
+                      right: -30,
+                      opacity: 1,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    exit={{
+                      position: "relative",
+                      top: -40,
+                      right: -40,
+                      opacity: 0,
+                    }}
+                  >
+                    <Image
+                      className="object-contain  h-14 w-14 -top-2 right-4 relative"
+                      src={Linkdin}
+                      alt="frame"
+                    />
+                  </motion.div>
+                </>
+              )}
+            </AnimatePresence>
           </div>
         </div>
-         </div>
 
-        {/* <div className="flex items-start gap-2 w-full relative">
-          <AnimatePresence>
-            {currentindex === 1 && (
-              <motion.div
-             
-              
-                initial={{ y: 20, opacity: 0, }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                exit={{ opacity: 0, y: 10 }}
-              >
-                <Image
-                  className="pt-4 w-[48rem] h-32 relative"
-                  src={Frame}
-                  alt="frame"
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-          <div
-            onMouseOver={() => setindex(1)}
-            onMouseLeave={() => setindex(null)}
-          >
-            <Image
-              className="object-contain cursor-pointer h-16 w-16"
-              src={birthicon}
-              alt="birthicon"
-            />
+        <div>
+          <div className="flex items-start w-full relative ">
+            <div
+              onMouseOver={() => setindex(0)}
+              onMouseLeave={() => setindex(null)}
+            >
+              <Image
+                className="object-contain cursor-pointer h-16 w-16"
+                src={birthicon}
+                alt="birthicon"
+              />
+            </div>
           </div>
-        </div> */}
+          <div className="flex items-start w-full relative ">
+            <div
+              onMouseOver={() => setindex(1)}
+              onMouseLeave={() => setindex(null)}
+            >
+              <Image
+                className="object-contain cursor-pointer h-16 w-16"
+                src={Sign}
+                alt="birthicon"
+              />
+            </div>
+          </div>
+          <div className="flex items-start w-full relative ">
+            <div
+              onMouseOver={() => setindex(2)}
+              onMouseLeave={() => setindex(null)}
+            >
+              <Image
+                className="object-contain cursor-pointer h-16 w-16"
+                src={Location}
+                alt="birthicon"
+              />
+            </div>
+          </div>
+          <div className="flex items-start w-full relative ">
+            <div
+              onMouseOver={() => setindex(3)}
+              onMouseLeave={() => setindex(null)}
+            >
+              <Image
+                className="object-contain cursor-pointer h-16 w-16"
+                src={Social}
+                alt="birthicon"
+              />
+            </div>
+          </div>
+
+         
+        </div>
       </div>
 
       <Image
@@ -254,6 +253,10 @@ function Hero() {
         width={700}
         className="absolute left-[-440px] top-[50px] max-md:left-[-450px] min-h-[500px] min-w-[700px]"
       />
+    
+
+
+    
     </div>
   );
 }
