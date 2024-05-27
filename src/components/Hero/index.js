@@ -19,8 +19,10 @@ import Social from "../../images/hero/Social.png";
 import Insta from "../../images/hero/Insta.png";
 import Linkdin from "../../images/hero/Linkdin.png";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 function Hero() {
+  const router = useRouter();
   const [currentindex, setindex] = useState(null);
   const [text] = useTypewriter({
     words: ["a Innovator", "Technology Leader", "AN ENTREPRENEUR."],
@@ -69,7 +71,7 @@ function Hero() {
         <Image src={sravan} width={700} height={500} />
       </div>
 
-      <div className="h-auto   absolute right-0 top-32 flex  justify-end items-start gap-2">
+      <div className="h-auto z-20 absolute top-0 left-60 md:right-0 lg:right-0 md:top-32 lg:top-32 flex  justify-end items-start gap-2">
         <div className="flex flex-col justify-center items-end">
           <div className="flex items-start w-[48rem] h-32   relative top-8">
             <AnimatePresence>
@@ -155,7 +157,12 @@ function Hero() {
                     }}
                   >
                     <Image
-                      className="object-contain h-14 w-14 -top-2 right-4 relative"
+                      onClick={() =>
+                        router.push(
+                          "https://www.linkedin.com/in/sravan-kumar-angadi-72049b60/"
+                        )
+                      }
+                      className="object-contain h-14 w-14 -top-2 right-4 relative cursor-pointer"
                       src={Insta}
                       alt="frame"
                     />
@@ -182,7 +189,12 @@ function Hero() {
                     }}
                   >
                     <Image
-                      className="object-contain  h-14 w-14 -top-2 right-4 relative"
+                      onClick={() =>
+                        router.push(
+                          "https://www.linkedin.com/in/sravan-kumar-angadi-72049b60/"
+                        )
+                      }
+                      className="object-contain  h-14 w-14 -top-2 right-4 relative cursor-pointer"
                       src={Linkdin}
                       alt="frame"
                     />
@@ -242,8 +254,6 @@ function Hero() {
               />
             </div>
           </div>
-
-         
         </div>
       </div>
 
@@ -253,10 +263,6 @@ function Hero() {
         width={700}
         className="absolute left-[-440px] top-[50px] max-md:left-[-450px] min-h-[500px] min-w-[700px]"
       />
-    
-
-
-    
     </div>
   );
 }

@@ -98,10 +98,10 @@ export default function Home() {
             <Hero />
           </div>
 
-          <Experience />
           <div id="section1">
             <MyStory />
           </div>
+          <Experience />
           <FoundersMission />
           <MyLifestyle />
           <div id="section2">

@@ -21,7 +21,7 @@ function MyStory() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex py-12 mt-4 mb-8 gap-12   justify-center text-right">
+      <div className="flex py-12 mt-16 mb-8 gap-12   justify-center text-right">
         <div>
           <motion.p
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
@@ -84,7 +84,7 @@ function MyStory() {
         <div className="w-full  flex justify-center items-start relative">
           <Image
             src={sravan}
-            className="h-[32rem] object-contain"
+            className="h-[32rem]  object-contain"
             alt="personal pic"
           />
           <Image
@@ -98,7 +98,7 @@ function MyStory() {
           <h6 className="text-3xl font-bold uppercase">
             WELCOME TO MY <br></br>WORLD.
           </h6>
-          <p className="text-justify font-medium">
+          <p className="text-justify font-medium break-all">
             The Founder and CEO of{" "}
             <span className="text-[#FF7143]">
               Angadi World Technologies Pvt. Ltd.

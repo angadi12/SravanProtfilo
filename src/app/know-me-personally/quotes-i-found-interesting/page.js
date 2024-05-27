@@ -54,7 +54,7 @@ function Page() {
        
     },
     {
-      quote: Quote1
+      quote: Quote5
      
     },
   ];

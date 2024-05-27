@@ -115,7 +115,7 @@ function ContactMe() {
           whileInView={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
           viewport={{ once: false }}
           transition={{ duration: 2 }}
-          className=" text-4xl md:text-6xl font-bold text-black "
+          className=" text-2xl md:text-6xl font-bold text-black px-4 "
         >
           ALL YOU HAVE TO DO IS SAY{" "}
           <span className="text-[--color-theme]">'HELLO'</span>
@@ -129,7 +129,7 @@ function ContactMe() {
               repeat: 0,
             }}
             viewport={{ once: false }}
-            className="text-black flex items-end min-h-[60px] min-w-[60px] md:min-h-[120px] md:min-w-[120px]"
+            className="text-black flex items-end min-h-[60px] min-w-[60px] md:min-h-[120px] md:min-w-[120px] "
           >
             <Image
               src={arrow}
@@ -141,11 +141,11 @@ function ContactMe() {
           </motion.div>
         </div>
       </div>
-      <p className="uppercase font-semibold mt-10">
+      <p className="uppercase font-semibold mt-10 px-2">
         fill out the necessary details, i will contact you!
       </p>
       <div className="flex justify-between items-start gap-24 h-auto md:flex-row flex-col">
-        <form className="md:flex-[0.8] flex-1 gap-12 text-black font-bold">
+        <form className="md:flex-[0.8] flex-1 gap-12 text-black font-bold px-2">
           <div className="flex gap-5 my-5 py-4 flex-wrap">
             <input
               id="name"

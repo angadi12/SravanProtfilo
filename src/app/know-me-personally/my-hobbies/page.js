@@ -10,10 +10,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import photography from "@/images/lifestyle/my-hobbies/photography.png";
-import reading from "@/images/lifestyle/my-hobbies/reading.png";
-import tennis from "@/images/lifestyle/my-hobbies/tennis.png";
-import travelling from "@/images/lifestyle/my-hobbies/travelling.png";
+import photography from "@/images/lifestyle/my-hobbies/Treveling.png";
+import reading from "@/images/lifestyle/my-hobbies/Cycling.png";
+import tennis from "@/images/lifestyle/my-hobbies/Foodie.png";
+import travelling from "@/images/lifestyle/my-hobbies/Cricket.png";
 import Autoplay from "embla-carousel-autoplay";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -43,23 +43,23 @@ function Page() {
   const hobbies = [
     {
       image: travelling,
-      title: "travelling",
-      text: "Traveling fuels my soul with adventure and discovery. From vibrant cities to serene landscapes, each journey unfolds new cultures and experiences. Immersed in local life, I embrace diversity and forge connections. Every destination is a canvas for exploration, where I collect moments, not possessions. Traveling is my passion, a constant source of inspiration and growth.",
+      title: "cricket",
+      text: "I find the strategy and teamwork on the cricket field invigorating. It parallels the collaborative spirit needed in business and offers a great way to stay active and engaged with my community.",
     },
     {
       image: photography,
-      title: "photography",
-      text: "A visual language through which I capture moments frozen in time. With every click of the shutter, I immortalize emotions, landscapes, and stories. From the golden hues of sunset to the intricate details of everyday life, each frame tells a unique tale. Through my camera, I preserve memories and share glimpses of the world as I perceive it.",
+      title: "solo trips",
+      text: "Traveling alone is my way of stepping back from the daily rush. These journeys allow me to immerse myself in new cultures and environments, fostering independence and creative insights.",
     },
     {
       image: tennis,
-      title: "tennis",
-      text: "A game of precision, strategy, and relentless determination. With each serve, volley, and backhand, I embrace the challenge and exhilaration of the court. It's a sport that demands both physical prowess and mental agility, pushing me to constantly improve and adapt. I find not just a game, but a lifelong passion that inspires and energizes me.",
+      title: "Foodie",
+      text: "My love for food extends beyond dining; it's about exploring diverse cuisines and culinary innovations. Each meal is a new adventure, offering flavors that tell the story of their origin.",
     },
     {
       image: reading,
-      title: "reading",
-      text: "Reading books captivates me, offering a passport to diverse worlds and experiences. With each page turned, I journey through imagination, gaining insights and empathy. It's a lifelong adventure of discovery and growth.",
+      title: "Cycling",
+      text: "Hitting the trails on my bike is not just exercise; it's a time for reflection and inspiration, often providing the break needed to solve complex problems with fresh perspectives.",
     },
   ];
 
