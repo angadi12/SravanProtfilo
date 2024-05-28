@@ -48,12 +48,12 @@ function page() {
 
 
  const Buissnessdigi=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Business Digitalization</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Transforming traditional business landscapes into digital powerhouses is my fort.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8 ">
+          <h6 className="md:text-3xl lg:text-3xl font-bold">Business Digitalization</h6>
+          <p className="md:text-lg lg:text-lg w-full  font-medium text-gray-600 text-start">{`Transforming traditional business landscapes into digital powerhouses is my fort.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">Implementing revolutionary digital solutions that turn challenges into opportunities.</li>
            <li  className="text-sm text-start">Crafting unforgettable customer experiences with the latest technologies.</li>
            <li  className="text-sm text-start">Streamlining operations to boost efficiency and productivity like never before.</li>
@@ -61,12 +61,12 @@ function page() {
   </div>
  }
  const Techconsoulting=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Tech Consulting</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Navigating the technology world requires a trusted guide for success.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8 ">
+          <h6 className="md:text-3xl font-bold">Tech Consulting</h6>
+          <p className="md:text-lg lg:text-lg font-medium text-gray-600 text-start">{`Navigating the technology world requires a trusted guide for success.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex  md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Insightful tech integration advice, ensuring seamless adoption.`}</li>
            <li  className="text-sm text-start">{`Customized solutions that address specific challenges with precision.`}</li>
            <li  className="text-sm text-start">{`Staying ahead of tech trends to keep your business future-ready.`}</li>
@@ -74,12 +74,12 @@ function page() {
   </div>
  }
  const Brandmast=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Brand Mastery</h6>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Brand Mastery</h6>
           <p className="text-lg font-medium text-gray-600 text-start">{`In the realm of branding, I am the alchemist turning vision into reality.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Weaving compelling brand stories that captivate and connect with audiences.`}</li>
            <li  className="text-sm text-start">{`Strategizing cohesive brand blueprints that align with the heart and soul of the business.`}</li>
            <li  className="text-sm text-start">{`Utilizing innovative marketing techniques to create a brand presence that resonates.`}</li>
@@ -87,12 +87,12 @@ function page() {
   </div>
  }
  const Productbrand=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Product Branding</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Creating iconic product identities is an art and science I excel in.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Product Branding</h6>
+          <p className="md:text-lg font-medium text-gray-600 text-start">{`Creating iconic product identities is an art and science I excel in.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Strategic branding initiatives that highlight what makes your product unique.`}</li>
            <li  className="text-sm text-start">{`In-depth market analysis to position your product perfectly.`}</li>
            <li  className="text-sm text-start">{`Designing impactful marketing campaigns that drive product adoption and loyalty.`}</li>
@@ -100,12 +100,12 @@ function page() {
   </div>
  }
  const Valuecreation=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Value Creation</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Every action in business should drive value and a purpose to this world.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start gap-8">
+          <h6 className="md:text-3xl font-bold">Value Creation</h6>
+          <p className="md:text-lg font-medium text-gray-600 text-start">{`Every action in business should drive value and a purpose to this world.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Identifying and maximizing value drivers within your operations.`}</li>
            <li  className="text-sm text-start">{`Streamlining processes to enhance efficiency and profitability.`}</li>
            <li  className="text-sm text-start">{`Ensuring sustainable growth that benefits all stakeholders, from employees to customers.`}</li>
@@ -113,12 +113,12 @@ function page() {
   </div>
  }
  const Productiondesign=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Product Design</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Innovation meets functionality in my approach to product design.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Product Design</h6>
+          <p className="md:text-lg font-medium text-gray-600 text-start">{`Innovation meets functionality in my approach to product design.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Crafting user-friendly products that delight and deliver.`}</li>
            <li  className="text-sm text-start">{`Collaborating with diverse teams to bring groundbreaking ideas to life.`}</li>
            <li  className="text-sm text-start">{`Focusing on designs that meet and exceed market expectations.`}</li>
@@ -126,12 +126,12 @@ function page() {
   </div>
  }
  const Growthstrategy=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Growth Strategy</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Innovation meets functionality in my approach to product design.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Growth Strategy</h6>
+          <p className="md:text-lg font-medium text-gray-600 text-start">{`Innovation meets functionality in my approach to product design.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Spotting new market opportunities and unlocking potential revenue streams.`}</li>
            <li  className="text-sm text-start">{`Developing scalable business models that support exponential growth.`}</li>
            <li  className="text-sm text-start">{`Executing go-to-market strategies that secure a strong market presence.`}</li>
@@ -139,12 +139,12 @@ function page() {
   </div>
  }
  const Teambuilding=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Team Building</h6>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Team Building</h6>
           <p className="text-lg font-medium text-gray-600 text-start">{`Behind every great achievement is a strong team.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4 flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Assembling high-performing teams with diverse talents and perspectives.`}</li>
            <li  className="text-sm text-start">{`Fostering a culture of collaboration and inclusivity.`}</li>
            <li  className="text-sm text-start">{`Empowering team members to innovate and excel.`}</li>
@@ -153,12 +153,12 @@ function page() {
  }
 
  const Collaboration=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Cross-Collaboration</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Innovation thrives in collaborative environments.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Cross-Collaboration</h6>
+          <p className="md:text-lg font-medium text-gray-600 text-start">{`Innovation thrives in collaborative environments.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4  flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Facilitating synergy across teams to drive project success.`}</li>
            <li  className="text-sm text-start">{`Encouraging the exchange of ideas and best practices.`}</li>
            <li  className="text-sm text-start">{`Building strategic partnerships that amplify business capabilities.`}</li>
@@ -166,12 +166,12 @@ function page() {
   </div>
  }
  const Innovation=()=>{
-  return <div className="w-11/12 mt-12 mx-auto grid grid-cols-2 place-content-center justify-between items-start">
-       <div className="w-3/4 flex flex-col justify-center items-start gap-8">
-          <h6 className="text-3xl font-bold">Innovation Drive</h6>
-          <p className="text-lg font-medium text-gray-600 text-start">{`Innovation is the heartbeat of my entrepreneurial journey.`}</p>
+  return <div className="w-11/12 md:mt-12 mt-4 mx-auto grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-center justify-between items-start">
+       <div className="md:w-3/4 flex flex-col justify-center items-start md:gap-8">
+          <h6 className="md:text-3xl font-bold">Innovation Drive</h6>
+          <p className="md:text-lg font-medium text-gray-600 text-start">{`Innovation is the heartbeat of my entrepreneurial journey.`}</p>
        </div>
-       <div className=" flex mt-12  flex-col justify-center items-start gap-4">
+       <div className=" flex md:mt-12 mt-4 flex-col justify-center items-start gap-4">
            <li className="text-sm text-start">{`Exploring uncharted territories in technology to stay ahead of the curve.`}</li>
            <li  className="text-sm text-start">{`Implementing disruptive solutions that redefine industries.`}</li>
            <li  className="text-sm text-start">{`Creating a culture of continuous innovation and improvement.`}</li>
@@ -253,7 +253,7 @@ function page() {
       opacity: 1,
     }}
     transition={{ duration: 2 }}
-    className="md:pt-2 p-2 md:p-0  min-h-[130vh]"
+    className="md:pt-2 p-2 md:p-0  md:min-h-[130vh]"
   >
     <div className="flex items-center md:pb-8 border-b-2 border-b-[#858585] w-[90%] mx-auto py-2 ">
       <Image
@@ -268,7 +268,7 @@ function page() {
       />
       <p className="md:text-4xl uppercase font-bold">My expertise</p>
     </div>
-    <div className="mt-4   w-full flex justify-center items-center mx-auto overflow-hidden">
+    <div className="mt-4   w-full flex justify-center items-center mx-auto md:overflow-hidden">
       <Carousel
         setApi={setApi}
         opts={{
@@ -294,7 +294,7 @@ function page() {
 
           
         </CarouselContent>
-        <div className="absolute bottom-40 right-28">
+        <div className="absolute md:bottom-40 md:right-28 lg:bottom-40 lg:right-28 -bottom-12 ">
         <CarouselPrevious className='bg-black text-white' />
     <CarouselNext className='bg-black text-white'/>
 
