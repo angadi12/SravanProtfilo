@@ -116,7 +116,7 @@ function Page() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="absolute -right-[36rem] bottom-14 flex flex-col">
+          <div className="absolute md:-right-[36rem] lg:-right-[36rem] md:bottom-14 lg:bottom-14 -bottom-40 right-12 flex flex-col">
           <CarouselPrevious className='bg-black text-white' />
       <CarouselNext className='bg-black text-white' />
 
