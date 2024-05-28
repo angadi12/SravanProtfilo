@@ -56,7 +56,7 @@ const Nav = () => {
           </span>
         </NavbarBrand>
         <NavbarContent
-          className="hidden sm:flex gap-4 uppercase ml-24"
+          className="hidden sm:flex gap-9 uppercase ml-24 lg:ml-28"
           justify="end"
         >
           <NavbarItem>

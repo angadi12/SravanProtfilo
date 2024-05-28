@@ -22,7 +22,7 @@ import arrow from "@/images/common/Arrow.png";
 import { useRouter } from "next/navigation";
 function MyLifestyle() {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(2);
 
   const personal = [
     {
@@ -87,7 +87,7 @@ function MyLifestyle() {
   ];
   const variants = {
     left: {
-      backgroundColor: "#ff3535",
+      backgroundColor:"#1877f2",
       x: 0,
       y: 0,
       transition: {
@@ -96,7 +96,7 @@ function MyLifestyle() {
       },
     },
     right: {
-      backgroundColor: "#1877f2",
+      backgroundColor: '#ff3535', 
       right: 0,
       x: "100%",
       transition: {
@@ -114,18 +114,6 @@ function MyLifestyle() {
         <div
           className="flex-1 justify-center items-center flex py-5"
           onClick={() => {
-            setActiveTab(1);
-          }}
-        >
-          {activeTab === 1 ? (
-            <Image src={personalRed} className="max-w-[85%]" />
-          ) : (
-            <Image src={personalGrey} className="max-w-[85%]" />
-          )}
-        </div>
-        <div
-          className="flex-1 justify-center items-center flex py-5"
-          onClick={() => {
             setActiveTab(2);
           }}
         >
@@ -135,14 +123,27 @@ function MyLifestyle() {
             <Image src={professionalgrey} className="max-w-[85%]" />
           )}
         </div>
+        <div
+          className="flex-1 justify-center items-center flex py-5"
+          onClick={() => {
+            setActiveTab(1);
+          }}
+        >
+          {activeTab === 1 ? (
+            <Image src={personalRed} className="max-w-[85%]" />
+          ) : (
+            <Image src={personalGrey} className="max-w-[85%]" />
+          )}
+        </div>
         <motion.div
           className={`absolute min-h-[1px] bottom-0 w-[50%] left-0`}
-          style={{
-            backgroundColor: activeTab == 1 ? "#ff3535" : "#1877f2",
-          }}
-          key="animation-on-state"
+          // style={{
+          //   backgroundColor: activeTab == 2 ? "#ff3535" : "#1877f2",
+          // }}
+          key="animation-on-state" 
           variants={variants}
-          animate={activeTab == 1 ? "left" : "right"}
+          animate={activeTab == 2 ? "left" : "right"}
+
         ></motion.div>
       </div>
       <div
@@ -385,7 +386,46 @@ function MyLifestyle() {
             );
           })}
       </div>
-      <div className="md:w-[80%] mx-auto md:p-10 p-3 ">
+    {activeTab===2&&  <div className="md:w-[80%] mx-auto md:p-10 p-3 ">
+        <div className="flex justify-start items-end gap-2">
+          <Image className="mb-6" src={Vector}/>
+          <h6 className="leading-7 tracking-wide uppercase font-semibold w-96">{`A Comprehensive Framework Guiding My Approach to Work.`}</h6>
+        </div>
+        <div className="flex justify-center md:flex-row flex-col items-center gap-12 mt-8 w-full">
+          <div className=" border-l-2 p-4 border-black flex flex-col justify-between items-start gap-16 h-auto">
+            <div>
+              <p className="font-extrabold text-4xl leading-10">01</p>
+              <p className="uppercase font-medium">innovation</p>
+            </div>
+            <div className="flex justify-start items-start gap-2 flex-col">
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I must be innovative to remain ahead of the competition and continuously improve our  offerings.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`We aren’t afraid to attempt new things, even if they don’t always work out.`}</li>
+            </div>
+          </div>
+          <div className=" border-l-2 p-4 border-black flex flex-col justify-between items-start gap-16 h-auto">
+            <div>
+              <p className="font-extrabold text-4xl leading-10">02</p>
+              <p className="uppercase font-medium">perseverance</p>
+            </div>
+            <div className="flex justify-start items-start gap-2 flex-col">
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`Entrepreneurship is not simple, and setbacks are unavoidable.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`I view failure as an  opportunity to learn and develop, and we never give up on our dreams.`}</li>
+            </div>
+          </div>
+          <div className=" border-l-2 p-4 border-black flex flex-col justify-between items-start gap-16 h-auto">
+            <div>
+              <p className="font-extrabold text-4xl leading-10">03</p>
+              <p className="uppercase font-medium">approach</p>
+            </div>
+            <div className="flex justify-start items-start gap-2 flex-col">
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`The business landscape is constantly changing.`}</li>
+              <li className="text-xs font-semibold w-56 text-justify uppercase break-all">{`and I must remain current on the latest  trends and technologies.`}</li>
+            </div>
+          </div>
+         
+        </div>
+      </div>}
+    {activeTab===1&&  <div className="md:w-[80%] mx-auto md:p-10 p-3 ">
         <div className="flex justify-start items-end gap-2">
           <Image className="mb-6" src={Vector}/>
           <h6 className="leading-7 tracking-wide uppercase font-semibold w-96">Navigating Life's Pathways with Purpose, attitude and approach.</h6>
@@ -423,7 +463,7 @@ function MyLifestyle() {
           </div>
          
         </div>
-      </div>
+      </div>}
     </div>
   );
 }

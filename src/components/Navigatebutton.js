@@ -67,7 +67,10 @@ const Navigatebutton = () => {
         exit={{ y: 50,scale: 0, opacity: 0 }}
         transition={{ duration: 0.7 }}
       >
+      <Link href={`https://www.angadiworldtech.com/`}>
+
         <Image className="md:w-24 md:h-24 h-12 w-12 hover:ring-1 hover:ring-[#FF7143] rounded-full" src={logo2} />
+      </Link>
       </motion.div>
       <motion.div
         initial={{ scale: 0, y: 30, opacity: 0 }}

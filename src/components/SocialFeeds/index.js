@@ -76,7 +76,7 @@ function SocialFeeds() {
   ];
 
   const handleRefresh = () => {
-    const newNumPosts = Math.min(mergedData.length, numPosts + 5); // Increase by 10 or less if fewer posts available
+    const newNumPosts = Math.min(mergedData.length, numPosts + 5); 
     setNumPosts(newNumPosts);
   };
 
@@ -99,6 +99,9 @@ function SocialFeeds() {
       };
     }
   }, [isClient]);
+
+
+  console.log(mergedData)
 
   return (
     <div className="bg-white py-10">

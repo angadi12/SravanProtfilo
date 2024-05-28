@@ -98,7 +98,7 @@ function Page() {
       <div className="mt-12 flex-col md:flex-row flex justify-between items-center  max-w-[800px] mx-auto">
         <Carousel
           setApi={setApi}
-          plugins={[plugin.current]}
+          // plugins={[plugin.current]}
           // onMouseEnter={plugin.current.stop}
           // onMouseLeave={plugin.current.reset}
           opts={{
@@ -116,8 +116,11 @@ function Page() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          {/* <CarouselPrevious />
-      <CarouselNext /> */}
+          <div className="absolute -right-[36rem] bottom-14 flex flex-col">
+          <CarouselPrevious className='bg-black text-white' />
+      <CarouselNext className='bg-black text-white' />
+
+          </div>
         </Carousel>
         <div className="md:w-2/4 px-4 md:px-0">
           <motion.div
