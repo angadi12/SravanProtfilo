@@ -192,6 +192,7 @@ function Hero() {
                       onClick={() =>
                         router.push(
                           "https://www.linkedin.com/in/sravan-kumar-angadi-72049b60/"
+                          
                         )
                       }
                       className="object-contain  h-14 w-14 -top-2 right-4 relative cursor-pointer"

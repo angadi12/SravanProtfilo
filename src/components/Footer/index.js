@@ -83,19 +83,19 @@ function Footer() {
             <p className="text-[12px]">social</p>
             <p className="text-3xl flex gap-2 mt-2">
               <Link href={'https://www.instagram.com/angadiworldtech/'}>
-              <AiFillInstagram />
+              <AiFillInstagram className="cursor-pointer" />
 
               </Link>
               <Link href={''}>
 
-              <FaFacebookSquare />
+              <FaFacebookSquare  className="cursor-pointer"/>
               </Link>
-              <Link href={'https://www.linkedin.com/company/awt-technology'}>
+              <Link href={'https://www.linkedin.com/in/sravan-kumar-angadi-72049b60/'}>
 
-              <IoLogoLinkedin />
+              <IoLogoLinkedin  className="cursor-pointer"/>
               </Link>
-              <FaSquareTwitter />
-              <TbBrandYoutubeFilled />
+              <FaSquareTwitter className="cursor-pointer" />
+              <TbBrandYoutubeFilled className="cursor-pointer" />
             </p>
           </div>
         </div>
