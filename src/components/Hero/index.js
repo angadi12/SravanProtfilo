@@ -74,7 +74,7 @@ function Hero() {
       <div className="h-auto z-20 absolute top-0 left-60 md:right-0 lg:right-0 md:top-32 lg:top-32 flex  justify-end items-start gap-2">
         <div className="flex flex-col justify-center items-end">
           <div className="flex items-start w-[48rem] h-32   relative top-8">
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {currentindex === 0 && (
                 <motion.div
                   initial={{ y: 20, opacity: 0 }}
@@ -89,10 +89,10 @@ function Hero() {
                   />
                 </motion.div>
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
           </div>
           <div className="flex items-start  w-[48rem] h-32 relative -top-8 ">
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {currentindex === 1 && (
                 <motion.div
                   initial={{ y: 20, opacity: 0 }}
@@ -107,7 +107,7 @@ function Hero() {
                   />
                 </motion.div>
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
           </div>
           <div className="flex items-start   w-[48rem] h-32 relative -top-24 ">
             <AnimatePresence>
@@ -207,8 +207,8 @@ function Hero() {
         </div>
 
         <div>
-          <div className="flex items-start w-full relative ">
-            <div
+          <div className="flex items-start w-full relative h-16 ">
+            {/* <div
               onMouseOver={() => setindex(0)}
               onMouseLeave={() => setindex(null)}
             >
@@ -217,10 +217,10 @@ function Hero() {
                 src={birthicon}
                 alt="birthicon"
               />
-            </div>
+            </div> */}
           </div>
-          <div className="flex items-start w-full relative ">
-            <div
+          <div className="flex items-start w-full relative h-16 ">
+            {/* <div
               onMouseOver={() => setindex(1)}
               onMouseLeave={() => setindex(null)}
             >
@@ -229,7 +229,7 @@ function Hero() {
                 src={Sign}
                 alt="birthicon"
               />
-            </div>
+            </div> */}
           </div>
           <div className="flex items-start w-full relative ">
             <div
@@ -237,7 +237,7 @@ function Hero() {
               onMouseLeave={() => setindex(null)}
             >
               <Image
-                className="object-contain cursor-pointer h-16 w-16"
+                className="object-contain cursor-pointer h-16 w-16 rounded-tl-xl"
                 src={Location}
                 alt="birthicon"
               />

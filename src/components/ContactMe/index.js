@@ -215,17 +215,16 @@ function ContactMe() {
               <MdEmail />
               <p>sravan@angadiworldtech.com</p>
             </div>
-            <div className=" flex gap-5 py-2">
+            {/* <div className=" flex gap-5 py-2">
               <FaPhoneAlt />
               <p>+91 9110314465</p>
-            </div>
+            </div> */}
           </div>
           <hr className="mb-5"></hr>
-          <div className=" flex gap-5">
+          <div className=" flex gap-5 h-24">
             <FaLocationDot className="text-white mt-[5px]" />
             <p>
-              # 93/1,5, First Floor MRS Complex, Ramamurthy Nagar Main Rd,
-              Ramamurthy Nagar, Bengaluru, Karnataka 560016
+              Hyderabad
             </p>
           </div>
           <div className="text-xl text-white cursor-pointer flex gap-2 relative max-w-fit ml-auto bottom-[-15px] right-[-20px]">
