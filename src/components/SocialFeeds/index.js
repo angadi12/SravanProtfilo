@@ -33,8 +33,8 @@ function SocialFeeds() {
   const [isClient, setIsClient] = useState(false);
 
   const fetchData = async () => {
-    const instagramToken = `IGQWRNUlFYak5UZAkZAqRzRtSHZAUZATBBS01QbWUxczdhTjhHUkRFQWsyVFIySG5kOWZALdGhzemZA5SWZA3REtuaEgxRXdWQXBoUTlCV1R5bjgxaFZAMMThELUFBNXc4MnNvYU5zVWlYTUtlSVljcUgzZAmhzcFJZAWGZAqMEUZD`;
-    const facebookToken = `EAArV3Lx19gABO3tc9WZBaHrwcodA6ysK4qaCRruFuX4fAO0zZBCeZBTS2mMZAgKVRhAd6kAuJwYeTQ1ZBBEZBXEm0QmAF55fmdls9OK4cUv5leUknF6PHMZAucpXKj7GJdro0NyZAUVLKLqMroQj8na3cnH6cfuUqgvlTxB3Ezy3jYfeQomrNUdHg37TiREozZBZBWWQKGManY`;
+    const instagramToken = `IGQWRQR3VrVWwwWmhoczdxenFVNVFMM1ZAnemhQUGxTdGtUUWZAhV3JUT2pPU3p2YlNYeHl2clJiT3J6a1MtRTEteXRlOGxweVFILTcxZAHJGVXpKOEdNenlpMkFnWFdDWVlWenlJTnlWbXI3QTdod1VsZAHFBOVRaU3MZD`;
+    const facebookToken = `EAAR1ZBu6eiyABOwPZATr1etdapulwdZBAcKlOdBn0lmucvpHL5EGfq1ZC7N5VnMA13GklLsZAGj4B6D0Ntyc264lF4BuELk5GMXDaZCEKOxXRJhTrG0t9nAWBZAZCYZAC7VZBpGNXyAuLivbyvXGVdudmc2riu1EDdg4b3gpBEY2wlyTTbJtXu2SpZBp5J23zjt2Rlx`;
 
     try {
       const instagramResponse = await axios.get(
