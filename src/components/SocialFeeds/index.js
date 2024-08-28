@@ -37,11 +37,11 @@ function SocialFeeds() {
 
     try {
       const instagramResponse = await axios.get(
-        `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_TOKEN}`
+        `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN}`
       );
 
       const facebookResponse = await axios.get(
-        `https://graph.facebook.com/v12.0/me/feed?fields=id,message,created_time,full_picture,permalink_url&access_token=${process.env.FACEBOOK_TOKEN}`
+        `https://graph.facebook.com/v12.0/me/feed?fields=id,message,created_time,full_picture,permalink_url&access_token=${process.env.NEXT_PUBLIC_FACEBOOK_TOKEN}`
       );
 
       if (instagramResponse.status !== 200 || facebookResponse.status !== 200) {
