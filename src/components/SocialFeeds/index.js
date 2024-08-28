@@ -49,7 +49,7 @@ function SocialFeeds() {
       }
       const merged = [
         ...instagramResponse.data.data,
-        // ...facebookResponse.data.data,
+        ...facebookResponse.data.data,
       ];
       const latestinsta = [merged[0]];
       const latestface = [merged[25]];
