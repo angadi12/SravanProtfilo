@@ -33,16 +33,15 @@ function SocialFeeds() {
   const [isClient, setIsClient] = useState(false);
 
   const fetchData = async () => {
-    const instagramToken = `IGQWRQR3VrVWwwWmhoczdxenFVNVFMM1ZAnemhQUGxTdGtUUWZAhV3JUT2pPU3p2YlNYeHl2clJiT3J6a1MtRTEteXRlOGxweVFILTcxZAHJGVXpKOEdNenlpMkFnWFdDWVlWenlJTnlWbXI3QTdod1VsZAHFBOVRaU3MZD`;
-    const facebookToken = `EAAR1ZBu6eiyABOwPZATr1etdapulwdZBAcKlOdBn0lmucvpHL5EGfq1ZC7N5VnMA13GklLsZAGj4B6D0Ntyc264lF4BuELk5GMXDaZCEKOxXRJhTrG0t9nAWBZAZCYZAC7VZBpGNXyAuLivbyvXGVdudmc2riu1EDdg4b3gpBEY2wlyTTbJtXu2SpZBp5J23zjt2Rlx`;
+ 
 
     try {
       const instagramResponse = await axios.get(
-        `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${instagramToken}`
+        `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_TOKEN}`
       );
 
       const facebookResponse = await axios.get(
-        `https://graph.facebook.com/v12.0/me/feed?fields=id,message,created_time,full_picture,permalink_url&access_token=${facebookToken}`
+        `https://graph.facebook.com/v12.0/me/feed?fields=id,message,created_time,full_picture,permalink_url&access_token=${process.env.FACEBOOK_TOKEN}`
       );
 
       if (instagramResponse.status !== 200 || facebookResponse.status !== 200) {
@@ -50,7 +49,7 @@ function SocialFeeds() {
       }
       const merged = [
         ...instagramResponse.data.data,
-        ...facebookResponse.data.data,
+        // ...facebookResponse.data.data,
       ];
       const latestinsta = [merged[0]];
       const latestface = [merged[25]];
