@@ -10,7 +10,7 @@ import {
   NavbarMenu,
   Button,
 } from "@nextui-org/react";
-import Logo from "../images/common/Logo.JPG";
+import Logo from "../images/common/Logo.jpg";
 import name from "../images/Crouselimage/name.png";
 import Image from "next/image";
 import { createPortal } from "react-dom";
