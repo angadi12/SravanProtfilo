@@ -24,7 +24,7 @@ export function Crouselslider() {
   const Data = [
     {
       image: image1,
-      Year: "1991",
+      Year: "1992",
       title: "Dawn of the Innovator",
       Desc: "In the verdant landscapes of Andhra Pradesh, a future pioneer takes his first breath, destined to leave a mark on the world.",
     },

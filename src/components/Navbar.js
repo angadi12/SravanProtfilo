@@ -10,7 +10,7 @@ import {
   NavbarMenu,
   Button,
 } from "@nextui-org/react";
-import Logo from "../images/Crouselimage/LOGO.png";
+import Logo from "../images/common/Logo.JPG";
 import name from "../images/Crouselimage/name.png";
 import Image from "next/image";
 import { createPortal } from "react-dom";
@@ -48,12 +48,12 @@ const Nav = () => {
       >
         <NavbarBrand className="flex items-center justify-start ">
           <Image
-            className="rounded-full h-20 w-20 object-contain absolute left-0 "
+            className="rounded-full h-12 w-12 object-contain absolute left-2 "
             src={Logo}
           />
-          <span className=" font-[Rajdhani] font-bold md:text-[24px] text-lg  leading-[40px] tracking-wide ml-10 capitalize">
+          {/* <span className=" font-[Rajdhani] font-bold md:text-[24px] text-lg  leading-[40px] tracking-wide ml-10 capitalize">
             Sravan Kumar Angadi
-          </span>
+          </span> */}
         </NavbarBrand>
         <NavbarContent
           className="hidden sm:flex gap-9 uppercase ml-24 lg:ml-28"
