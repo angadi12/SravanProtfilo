@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -17,7 +17,6 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import styles from "./Header/index.module.css";
 
-
 import {
   Sheet,
   SheetClose,
@@ -25,26 +24,45 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetFooter
+  SheetFooter,
 } from "@/components/ui/sheet";
 import { IoMdMenu } from "react-icons/io";
-import { useRouter,usePathname   } from 'next/navigation'
+import { useRouter, usePathname } from "next/navigation";
+import { motion, useScroll } from "framer-motion";
 
 const Nav = () => {
-  const router = useRouter()
-  const pathname = usePathname()
+  const router = useRouter();
+  const pathname = usePathname();
+  const { scrollY } = useScroll();
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const [hidden, setHidden] = useState(false);
 
+  const active = `bg-white text-black w-full border rounded-full items-center justify-center flex text-center gap-4`;
+  const unactive = `w-full border rounded-full items-center justify-center flex text-center gap-4`;
 
-  const active=`bg-white text-black w-full border rounded-full items-center justify-center flex text-center gap-4`
-  const unactive=`w-full border rounded-full items-center justify-center flex text-center gap-4`
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollY.get() > prevScrollY) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      setPrevScrollY(scrollY.get());
+    };
 
- 
+    const unsubscribe = scrollY.on("change", handleScroll);
+    return () => unsubscribe();
+  }, [scrollY, prevScrollY]);
+
   return (
-    <>
+    <motion.div
+      initial={{ y: 0 }}
+      animate={{ y: hidden ? -100 : 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Navbar
         maxWidth="2xl"
         className="w-[98%] mx-auto  backdrop-blur-md  bg-black   border  border-white  h-14 rounded-full"
-        shouldHideOnScroll
       >
         <NavbarBrand className="flex items-center justify-start ">
           <Image
@@ -66,7 +84,7 @@ const Nav = () => {
               color="foreground"
               href="#"
             >
-             Welcome 
+              Welcome
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -86,7 +104,7 @@ const Nav = () => {
               href="#"
               aria-current="page"
             >
-             Innovations 
+              Innovations
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -95,7 +113,7 @@ const Nav = () => {
               className="text-xs font-bold leading-7 tracking-wider text-white hover:text-[#FF7143] transition-all duration-700"
               href="#"
             >
-             Community Connect
+              Community Connect
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -104,7 +122,7 @@ const Nav = () => {
               className="text-xs font-bold leading-7 tracking-wider text-white hover:text-[#FF7143] transition-all duration-700"
               href="#"
             >
-            Blog
+              Blog
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -133,7 +151,10 @@ const Nav = () => {
                 <SheetContent className="bg-transparent backdrop-blur-sm border-none">
                   <SheetHeader>
                     <SheetTitle>
-                    <Image className=" md:h-12 h-16  object-contain "  src={name}/>
+                      <Image
+                        className=" md:h-12 h-16  object-contain "
+                        src={name}
+                      />
 
                       {/* <span className="text-white font-[Pacifico] md:text-[24px] text-lg font-normal leading-[40px] tracking-wide ">
                         Sravan Kumar Angadi
@@ -142,59 +163,72 @@ const Nav = () => {
                   </SheetHeader>
                   <div className="py-4 border-none">
                     <div className=" flex justify-center  items-center gap-2 px-4 border-none">
-                      <SheetClose onClick={()=>router.push('/')} className="w-full py-2">
-                      <div
-                        className={pathname==='/'?active:unactive}
+                      <SheetClose
+                        onClick={() => router.push("/")}
+                        className="w-full py-2"
                       >
-                        <p className="text-center self-center"> Welcome </p>
-                      </div>
-
+                        <div className={pathname === "/" ? active : unactive}>
+                          <p className="text-center self-center"> Welcome </p>
+                        </div>
                       </SheetClose>
                     </div>
                     <div className=" flex justify-center items-center gap-2 px-4">
-                      <SheetClose onClick={()=>router.push('/Mystory')} className="w-full py-2">
-                      <div
-                        id="Mystory"
-                        className={pathname==='/Mystory'?active:unactive}
+                      <SheetClose
+                        onClick={() => router.push("/Mystory")}
+                        className="w-full py-2"
                       >
-                        <p className="text-center self-center"> My Journey</p>
-                      </div>
-
+                        <div
+                          id="Mystory"
+                          className={
+                            pathname === "/Mystory" ? active : unactive
+                          }
+                        >
+                          <p className="text-center self-center"> My Journey</p>
+                        </div>
                       </SheetClose>
                     </div>
                     <div className=" flex justify-center items-center gap-2 px-4">
-                    <SheetClose onClick={()=>router.push('/Service')}  className="w-full py-2">
-                      <div
-                        id="Service"
-                        className={pathname==='/Service'?active:unactive}
+                      <SheetClose
+                        onClick={() => router.push("/Service")}
+                        className="w-full py-2"
                       >
-                        <p className="text-center self-center"> Innovations </p>
-                      </div>
-
+                        <div
+                          id="Service"
+                          className={
+                            pathname === "/Service" ? active : unactive
+                          }
+                        >
+                          <p className="text-center self-center">
+                            {" "}
+                            Innovations{" "}
+                          </p>
+                        </div>
                       </SheetClose>
                     </div>
                     <div className=" flex justify-center items-center gap-2 px-4">
-                    <SheetClose  onClick={()=>router.push('/Social')}  className="w-full py-2">
-                      <div
-                        id="Social"
-                        className={pathname==='/Social'?active:unactive}
+                      <SheetClose
+                        onClick={() => router.push("/Social")}
+                        className="w-full py-2"
                       >
-                        <p className="text-center self-center"> Community Connect</p>
-                      </div>
-
+                        <div
+                          id="Social"
+                          className={pathname === "/Social" ? active : unactive}
+                        >
+                          <p className="text-center self-center">
+                            {" "}
+                            Community Connect
+                          </p>
+                        </div>
                       </SheetClose>
                     </div>
                   </div>
-
-                 
                 </SheetContent>
               </Sheet>
             </div>
           </NavbarItem>
         </NavbarContent>
-        
       </Navbar>
-    </>
+    </motion.div>
   );
 };
 
