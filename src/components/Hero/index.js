@@ -31,38 +31,37 @@ function Hero() {
 
   gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
-  useGSAP(() => {
-    const button = document.querySelector("#letsTalk");
+ 
 
-    button.addEventListener("click", () => {
-      gsap.to(window, {
-        duration: 3,
-        scrollTo: { y: "#section5", offsetY: 70 },
-        ease: "back.out",
-      });
+  const scrollto = () => {
+  
+    gsap.to(window, {
+      duration: 5,
+      scrollTo: { y: "#section5", offsetY: 70 }, // Replace '#section5' with the actual ID of the section you want to scroll to
+      ease: "back.out",
     });
-  });
+  };
 
   return (
-    <div className="pt-20 flex flex-wrap md:px-0 px-5 relative z-[1]" id="hero">
+    <div className="pt-20 flex flex-wrap md:px-0 px-5 relative z-[1] cursor-pointer" >
       <div className="flex-1 w-full flex-col md:flex-row flex justify-center items-center md:justify-end md:items-end">
         <div className="w-full  overflow-visible md:pl-24 flex items-start justify-start  flex-col gap-y-3 pb-8">
-          <div className="md:text-2xl font-bold uppercase leading-22 tracking-tighter text-[--color-theme]">
+          <div className="md:text-3xl font-bold uppercase leading-22 tracking-tighter text-[--color-theme]">
             Sravan kumar angadi
           </div>
-          <div className="md:text-4xl text-xl uppercase font-bold leading-tight tracking-tighter text-left  ">
+          <div  className="md:text-4xl text-xl uppercase font-bold leading-tight tracking-tighter text-left  ">
             I'm {text}
           </div>
-          <div className="md:text-[18px]  leading-7 tracking-tight text-left max-w-[330px] max-md:mx-auto">
+          <div  className="md:text-[18px]  leading-7 tracking-tight text-left max-w-[330px] max-md:mx-auto">
             {`Let's`} unite our efforts to achieve your goals and bring your
             dreams to life.
           </div>
-          <div id="letsTalk">
-            <button className="flex items-center gap-3 mt-5 bg-[#FF71431A]  p-[6.5px] text-sm font-[600] rounded-[50px] uppercase max-md:mx-auto">
+          <div  className="cursor-pointer relative z-[10]">
+            <button className="flex items-center gap-3 mt-5 bg-[#FF71431A] cursor-pointer p-[6.5px] text-sm font-[600] rounded-[50px] uppercase max-md:mx-auto">
               <span className="bg-[--color-theme] p-[12px] rounded-[50%]">
                 <FaPhoneAlt />
               </span>
-              <span>{`got a project? let’s talk!`}</span>
+              <span onClick={scrollto}  className="cursor-pointer">{`got a project? let’s talk!`}</span>
             </button>
           </div>
         </div>

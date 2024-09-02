@@ -30,7 +30,7 @@ function FoundersMission() {
     <div className="bg-white text-black py-20">
       <div className="mb-10">
         <p className="uppercase text-2xl font-bold leading-tight tracking-tighter text-center">{`a proud founder’s mission`}</p>
-        <p className="max-w-[80%] mx-auto mt-5 text-justify break-all">
+        <p className="max-w-[80%] mx-auto mt-5 text-sm font-medium  tracking-normal leading-7 text-justify ">
           {`To create a dynamic and informative digital solutions that  serves as
           a hub of knowledge and inspiration for aspiring  entrepreneurs looking
           to start, grow and scale their  businesses and to empower

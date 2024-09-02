@@ -29,6 +29,7 @@ export default function Home() {
     const button1 = document.querySelector("#Service");
     // const button2 = document.querySelector("#Works");
     const button3 = document.querySelector("#Social");
+    const button33 = document.querySelector("#blog");
     const button4 = document.querySelector("#letsTalkBtn");
     const button5 = document.querySelector("#name");
 
@@ -50,6 +51,13 @@ export default function Home() {
     //   gsap.to(window, {duration: 3, scrollTo:{y:"#section3", offsetY:70},ease:"back.out"});
     // });
     button3.addEventListener("click", () => {
+      gsap.to(window, {
+        duration: 4,
+        scrollTo: { y: "#section4", offsetY: 70 },
+        ease: "back.out",
+      });
+    });
+    button33.addEventListener("click", () => {
       gsap.to(window, {
         duration: 4,
         scrollTo: { y: "#section4", offsetY: 70 },
@@ -82,7 +90,7 @@ export default function Home() {
       exit={{ opacity: 0 }}
     >
       <NextUIProvider>
-        <div className=" w-full fixed z-10 p-1">
+        <div className=" w-full fixed z-10 p-1 top-2">
           <Nav />
         </div>
         <div

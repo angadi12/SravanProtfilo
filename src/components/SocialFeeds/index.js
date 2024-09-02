@@ -140,7 +140,7 @@ function SocialFeeds() {
           </motion.div>
         </div>
       </div>
-      <div className="flex md:gap-5 flex-wrap justify-between md:max-w-[60%] mx-auto px-5 overflow-hidden">
+      {/* <div className="flex md:gap-5 flex-wrap justify-between md:max-w-[60%] mx-auto px-5 overflow-hidden">
         {media.map((item) => {
           return (
             <p
@@ -155,7 +155,7 @@ function SocialFeeds() {
             </p>
           );
         })}
-      </div>
+      </div> */}
       <div className="w-11/12 md:w-[95%] mx-auto mt-10 px-10 overflow-hidden mb-12">
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 500: 2, 800: 3 }}>
           <Masonry gutter="10px">
@@ -194,12 +194,12 @@ function SocialFeeds() {
                 </>
               );
             })}
-            <div
+            {/* <div
               onClick={handleRefresh}
               className="font-[Pacifico] text-[#b3b3b3;] text-6xl flex justify-center items-center hover:text-[black] p-3"
             >
               Refresh
-            </div>
+            </div> */}
           </Masonry>
         </ResponsiveMasonry>
       </div>

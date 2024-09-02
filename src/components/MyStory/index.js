@@ -80,7 +80,7 @@ function MyStory() {
         </div>
       </div>
 
-      <div className="w-11/12 py-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between items-end gap-24">
+      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center justify-between items-start gap-24">
         <div className="w-full  flex justify-center items-start relative">
           <Image
             src={sravan}
@@ -98,7 +98,7 @@ function MyStory() {
           <h6 className="text-3xl font-bold uppercase">
             WELCOME TO MY <br></br>WORLD.
           </h6>
-          <p className="text-justify font-medium break-all">
+          <p className="text-justify font-medium ">
             The Founder and CEO of{" "}
             <span className="text-[#FF7143]">
               Angadi World Technologies Pvt. Ltd.
@@ -125,7 +125,7 @@ function MyStory() {
         </div>
       </div>
 
-      <div className="py-28">
+      <div className="">
         <Crouselslider />
       </div>
     </div>

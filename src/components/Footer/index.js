@@ -73,7 +73,7 @@ function Footer() {
           <hr className="lg:hidden"></hr>
           <div>
             <p className="text-[12px]">email</p>
-            <p className="md:text-3xl lowercase">sravan@angadiworldtech.com </p>
+            <p className="md:text-xl lowercase">sravan@angadiworldtech.com </p>
           </div>
           {/* <div>
             <p className="text-[12px]">phone</p>

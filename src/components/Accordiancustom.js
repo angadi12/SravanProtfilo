@@ -67,10 +67,10 @@ const Accordiancustom = () => {
             )
           }
         >
-          <div className="flex justify-start items-start gap-4 flex-col py-4">
-            <p className="text-sm font-medium ">{`We offer website design and development services that are  tailored to our client’s needs. Whether you’re looking for a  simple, informative website or a complex e-commerce platform,  we can help you create a website that meets your goals and  exceeds your expectations along with digital marketing  services.`}</p>
+          <div className="flex justify-start items-start gap-4 flex-col ">
+            <p className="text-sm font-medium tracking-normal leading-7">{`We offer website design and development services that are  tailored to our client’s needs. Whether you’re looking for a  simple, informative website or a complex e-commerce platform,  we can help you create a website that meets your goals and  exceeds your expectations along with digital marketing  services.`}</p>
             <Button className="w-60 rounded-bl-xl rounded-tr-xl rounded-tl-none rounded-br-none flex items-center gap-4 ring-1 ring-black ml-2 bg-white text-black hover:bg-black hover:text-white">
-              View Site
+              <Link href={"https://www.angadiworldtech.com/"}>View Site</Link>
               <IoIosArrowRoundForward />
             </Button>
           </div>
@@ -89,7 +89,7 @@ const Accordiancustom = () => {
           }
         >
           <div className="flex justify-start items-start gap-4 flex-col py-4">
-            <p className="text-sm font-medium ">{`QR Angadi is a flagship product of Angadi World Technologies Pvt Ltd, a company founded with a commitment to innovation and excellence. Our team of dedicated professionals is driven to simplify and enhance the QR code experience for users across various industries.`}</p>
+            <p className="text-sm font-medium tracking-normal leading-7">{`QR Angadi is a flagship product of Angadi World Technologies Pvt Ltd, a company founded with a commitment to innovation and excellence. Our team of dedicated professionals is driven to simplify and enhance the QR code experience for users across various industries.`}</p>
             <Button className="w-60 rounded-bl-xl rounded-tr-xl rounded-tl-none rounded-br-none flex items-center gap-4 ring-1 ring-black ml-2 bg-white text-black hover:bg-black hover:text-white">
               <Link href={'https://www.qrangadi.com'}>
               View Site

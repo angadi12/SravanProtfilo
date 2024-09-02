@@ -96,7 +96,7 @@ export function Crouselslider() {
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
                       <Image
-                        className="h-[28rem] object-fill hover:brightness-75 transition-all duration-500"
+                        className="h-[24rem] object-fill hover:brightness-75 transition-all duration-500"
                         src={value.image}
                       />
                       <motion.div
