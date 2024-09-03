@@ -103,7 +103,7 @@ function SocialFeeds() {
   console.log(mergedData)
 
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-6">
       {" "}
       <div className="flex justify-center text-right mb-10 py-12">
         <motion.div
@@ -114,7 +114,7 @@ function SocialFeeds() {
           }}
           viewport={{ once: false }}
           transition={{ duration: 2 }}
-          className=" text-4xl md:text-8xl font-bold text-black uppercase "
+          className=" text-4xl md:text-6xl font-bold text-black uppercase "
         >
           <p className="text-[--color-theme] uppercase">Community</p>
           Connect.
@@ -132,8 +132,8 @@ function SocialFeeds() {
           >
             <Image
               src={arrow}
-              height={60}
-              width={60}
+              height={50}
+              width={50}
               className="h-[60px] w-[60px] md:h-[120px] md:w-[120px]"
               unoptimized
             />

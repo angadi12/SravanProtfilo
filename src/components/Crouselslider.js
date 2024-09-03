@@ -74,11 +74,11 @@ export function Crouselslider() {
 
   return (
     <div className="w-full  h-auto py-8 gap-8 flex  flex-col justify-between items-center px-2">
-      <div className="flex flex-col justify-start items-center gap-2 py-8">
+      <div className="flex flex-col justify-start items-center gap-2 py-4">
         <p className="uppercase text-xs text-gray-400 text-center">
           Journey throughout the years of my life.
         </p>
-        <h6 className="md:text-4xl text-3xl font-bold uppercase text-center ">
+        <h6 className="md:text-3xl text-3xl font-bold uppercase text-center ">
           Voyage<br></br> through the{" "}
           <span className="text-[#FF7143]">chapters</span> of my existence.
         </h6>
@@ -96,7 +96,7 @@ export function Crouselslider() {
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
                       <Image
-                        className="h-[24rem] object-fill hover:brightness-75 transition-all duration-500"
+                        className="h-[22rem] object-fill hover:brightness-75 transition-all duration-500"
                         src={value.image}
                       />
                       <motion.div

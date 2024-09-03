@@ -21,7 +21,7 @@ function MyStory() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex py-12 mt-16 mb-8 gap-12   justify-center text-right">
+      <div className="flex py-6 mt-16 mb-8 gap-12   justify-center text-right">
         <div>
           <motion.p
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
@@ -30,7 +30,7 @@ function MyStory() {
             }}
             viewport={{ once: false }}
             transition={{ duration: 2 }}
-            className="text-[--color-theme] text-3xl md:text-8xl leading-10 font-semibold "
+            className="text-[--color-theme] text-3xl md:text-6xl leading-10 font-semibold "
           >
             MY
           </motion.p>
@@ -41,7 +41,7 @@ function MyStory() {
               animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
               viewport={{ once: false }}
               transition={{ duration: 2, repeat: Infinity }}
-              className=" text-3xl md:text-8xl leading-10 font-semibold md:w-96 w-32"
+              className=" text-3xl md:text-6xl leading-10 font-semibold md:w-96 w-32"
             >
               STORY.
             </motion.div>
@@ -52,13 +52,13 @@ function MyStory() {
               animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
               viewport={{ once: false }}
               transition={{ duration: 2, repeat: Infinity }}
-              className=" text-3xl md:text-8xl leading-10 font-semibold md:w-96 w-32"
+              className=" text-3xl md:text-6xl leading-10 font-semibold md:w-96 w-32"
             >
               WORLD.
             </motion.div>
           )}
         </div>
-        <div className="relative min-h-[60px] min-w-[60px] md:min-h-[140px] md:min-w-[140px] ms-5 flex items-end">
+        <div className="relative min-h-[50px] min-w-[60px] md:min-h-[140px] md:min-w-[140px] ms-5 flex items-end">
           <motion.div
             whileInView={{ rotate: "-135deg" }}
             transition={{
@@ -71,9 +71,9 @@ function MyStory() {
           >
             <Image
               src={arrow}
-              height={60}
-              width={60}
-              className="h-[60px] w-[60px] md:h-[120px] md:w-[120px]"
+              height={50}
+              width={50}
+              className="h-[50px] w-[50px] md:h-[120px] md:w-[120px]"
               unoptimized
             />
           </motion.div>
@@ -84,35 +84,35 @@ function MyStory() {
         <div className="w-full  flex justify-center items-start relative">
           <Image
             src={sravan}
-            className="h-[32rem]  object-contain"
+            className="h-[24rem] w-full object-contain"
             alt="personal pic"
           />
           <Image
-            className="absolute -bottom-8 -right-8 object-contain h-60"
+            className="absolute -bottom-6 -right-2 object-contain h-40"
             src={Sravann}
             alt="personal pic"
           />
         </div>
         <div className="w-full flex flex-col gap-4 justify-center items-start">
           <p className="text-[#FF7143] uppercase font-semibold">About me</p>
-          <h6 className="text-3xl font-bold uppercase">
+          <h6 className="text-2xl font-bold uppercase">
             WELCOME TO MY <br></br>WORLD.
           </h6>
-          <p className="text-justify font-medium ">
+          <p className="text-justify font-medium text-sm ">
             The Founder and CEO of{" "}
             <span className="text-[#FF7143]">
               Angadi World Technologies Pvt. Ltd.
             </span>{" "}
             and{" "}
-            <span className="text-[#FF7143]">
+            <span className="text-[#FF7143] text-sm">
               International Business Expedition Trailblazers.
             </span>{" "}
             My goal is to support aspiring entrepreneurs, collaborate with
             like-minded individuals, and create ventures that bring health,
             wealth, and happiness to all involved.
           </p>
-          <Divider className="bg-white" />
-          <p>
+          <Divider className="bg-white " />
+          <p className="text-sm">
             “I unite top talents to pursue greatness through teamwork and
             collaboration. Fueled by innovation, I've built a thriving business,
             impacting many lives.”

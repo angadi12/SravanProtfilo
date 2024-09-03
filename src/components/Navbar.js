@@ -97,7 +97,7 @@ const Nav = () => {
               My Journey
             </Link>
           </NavbarItem>
-          <NavbarItem>
+          {/* <NavbarItem>
             <Link
               id="Service"
               className="text-xs font-bold leading-7 tracking-wider text-white hover:text-[#FF7143] transition-all duration-700"
@@ -106,7 +106,7 @@ const Nav = () => {
             >
               Innovations
             </Link>
-          </NavbarItem>
+          </NavbarItem> */}
           <NavbarItem>
             <Link
               id="Social"

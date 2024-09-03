@@ -26,7 +26,7 @@ export default function Home() {
 
   useGSAP(() => {
     const button = document.querySelector("#Mystory");
-    const button1 = document.querySelector("#Service");
+    // const button1 = document.querySelector("#Service");
     // const button2 = document.querySelector("#Works");
     const button3 = document.querySelector("#Social");
     const button33 = document.querySelector("#blog");
@@ -40,13 +40,13 @@ export default function Home() {
         ease: "back.out",
       });
     });
-    button1.addEventListener("click", () => {
-      gsap.to(window, {
-        duration: 2,
-        scrollTo: { y: "#section2", offsetY: 70 },
-        ease: "back.out",
-      });
-    });
+    // button1.addEventListener("click", () => {
+    //   gsap.to(window, {
+    //     duration: 2,
+    //     scrollTo: { y: "#section2", offsetY: 70 },
+    //     ease: "back.out",
+    //   });
+    // });
     // button2.addEventListener("click", () => {
     //   gsap.to(window, {duration: 3, scrollTo:{y:"#section3", offsetY:70},ease:"back.out"});
     // });
@@ -112,9 +112,9 @@ export default function Home() {
           <Experience />
           <FoundersMission />
           <MyLifestyle />
-          <div id="section2">
+          {/* <div id="section2">
             <OurServices />
-          </div>
+          </div> */}
           <div id="section3">{/* <OurWorks /> */}</div>
           {/* <RatingsAndClients /> */}
           <div id="section4">
